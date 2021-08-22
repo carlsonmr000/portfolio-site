@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     has_secure_password
+    has_many :projects, dependent: :delete_all
 
     validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
