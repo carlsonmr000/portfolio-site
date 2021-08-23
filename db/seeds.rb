@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.destroy_all
-Project.destroy_all
 Skill.destroy_all
+Project.destroy_all
+User.destroy_all
 
-flamingo = User.create(email: "flamingo@ga.edu",
-password_digest: "123456")
+flamingo = User.create!(email: "flamingo@ga.edu",
+password: "1234567")
 
 pp "#{User.count} users created"
 
@@ -21,7 +21,7 @@ image:"https://i.ibb.co/vQb62Lc/weather_app.png", github_url:
 "https://weatherize-app.netlify.app/", description: "Users can look up
 a city, state, or country and get the weather for the day. It will
 return the current temperature, min-temp, max-temp, sunset/sunrise,
-and wind.", user_id: flamingo[:id])
+and wind.", user: flamingo)
 
 guitar_app = Project.create!(name: "Guitar Songbook", image:
 "https://i.ibb.co/MN2GSSj/guitar-songbook.png", github_url:
@@ -29,15 +29,15 @@ guitar_app = Project.create!(name: "Guitar Songbook", image:
 "https://guitar-songbook.netlify.app/", description: "Guitar Songbook
 will let users store the songs they learn on guitar and add new songs
 to the app. Built using MERN stack (mongoDB, Express.js, React.js and
-Node.js) and heroku and netlify.", user_id: flamingo[:id])
+Node.js) and heroku and netlify.", user: flamingo)
 
 laugh_out_loud = Project.create!(name: "LaughOutLOUD", image:
 "https://i.ibb.co/vZHfT7S/laugh-out-loud.png", github_url:
 "https://github.com/carlsonmr000/Laugh-Out-Loud", deployed_url:
 "https://laugh-out-loud.netlify.app/", description: "LaughOutLoud is a
 building a comedy community through jokes. Users can submit their
-jokes on the platform and view fellow user's jokes.", user_id:
-flamingo[:id])
+jokes on the platform and view fellow user's jokes.", user:
+flamingo)
 
 pp "#{Project.count} projects created!"
 

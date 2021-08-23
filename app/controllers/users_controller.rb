@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       if user && user.authenticate(user_login_params[:password])
         token = create_token(user.id)
         render json: {
-          user: user.attributes.except("password_digest"),
+          user: user.attributes.except(""),
           token: token,
         }, status: :ok
       else
@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   
     # GET /users/verify
     def verify
-      render json: @current_user.attributes.except("password_digest"), status: :ok
+      render json: @current_user.attributes.except(""), status: :ok
     end
   
   
