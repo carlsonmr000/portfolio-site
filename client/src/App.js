@@ -1,16 +1,18 @@
+
 import React from "react";
 import "./App.css";
-import Home from "./screens/Home/Home";
-import Jokes from "./screens/Jokes/Jokes";
-import JokeCreate from "./screens/JokeCreate/JokeCreate";
-import JokeEdit from "./screens/JokeEdit/JokeEdit";
-import JokeDetail from "./screens/JokeDetail/JokeDetail";
 import LogIn from "./screens/LogIn/LogIn";
-import SignUp from "./screens/SignUp/SignUp";
 import { Route, Switch } from "react-router-dom";
 import { verify } from "./services/users";
 import { useState, useEffect } from "react";
 import Layout from "./components/Layout/Layout";
+import Home from "./screens/Home/Home.jsx";
+import AddProject from "./screens/AddProject/AddProject.jsx";
+import EditProject from "./screens/EditProject/EditProject.jsx";
+import Messages from "./screens/Messages/Messages.jsx";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "./App.css";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -21,6 +23,7 @@ const App = () => {
       const user = await verify();
       setUser(user ? user : null);
     };
+    Aos.init({ duration: 1500 });
     fetchUser();
   }, [toggleFetch]);
 
@@ -31,23 +34,17 @@ const App = () => {
           <Route exact path="/">
             <Home user={user} />
           </Route>
-          <Route exact path="/jokes">
-            <Jokes user={user} />
-          </Route>
-          <Route exact path="/create-joke">
-            <JokeCreate user={user} />
-          </Route>
-          <Route exact path="/jokes/:id/edit">
-            <JokeEdit user={user} />
-          </Route>
-          <Route exact path="/jokes/:id">
-            <JokeDetail user={user} />
-          </Route>
           <Route exact path="/log-in">
             <LogIn setUser={setUser} />
           </Route>
-          <Route exact path="/sign-up">
-            <SignUp setUser={setUser} />
+          <Route exact path="/add">
+          <AddProject setUser={setUser} user={user} />
+          </Route>
+          <Route exact path="/edit/:id">
+          <EditProject user={user} setUser={setUser} />
+          </Route>
+          <Route exact path="/contacts">
+          <Messages user={user} />
           </Route>
         </Switch>
       </Layout>
