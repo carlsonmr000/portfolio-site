@@ -32,6 +32,7 @@ export default function Contact() {
       <h1 id="contact" className="contact-title">
         Contact
       </h1>
+      <p className="contact-note">I'm available for work or if you just want to say hi, my inbox is open!</p>
       <form
         className="form"
         // onSubmit={(e) => handleSubmit(e)}

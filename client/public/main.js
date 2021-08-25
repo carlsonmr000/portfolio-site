@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
   
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
+      form.reset();
       var data = new FormData(form);
       ajax(form.method, form.action, data, success, error);
     });
