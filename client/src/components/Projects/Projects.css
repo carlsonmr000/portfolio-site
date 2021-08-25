@@ -90,6 +90,16 @@
   cursor: pointer;
 }
 
+.project-site:hover {
+    background-color: #f39406;
+    color: white;
+}
+
+.project-code:hover {
+    background-color: #f39406;
+    color: white;
+}
+
 .project-code {
   border: none;
   border-radius: 25px;

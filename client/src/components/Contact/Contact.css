@@ -75,7 +75,7 @@
     height: 15vh;
 }
 
-.send-container {
+.submit-container {
     display: flex;
     justify-content: center;
    align-items: center;
@@ -84,7 +84,7 @@
    flex-wrap: wrap;
 }
 
-.send {
+.submit {
     font-size: 1rem;
     border: 2px solid white; 
     border-radius: 25px;
@@ -98,4 +98,7 @@
     background-color: rgba(184, 248, 225, 0.5);
 }
 
- 
+.submit:hover {
+    background-color: #f39406;
+    color: white;
+}

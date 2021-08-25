@@ -15,7 +15,7 @@
   
   .item:hover,
   .navbar-title:hover {
-    color: #81eae2;
+    color: #f39406;
     cursor: pointer;
   
   }
@@ -49,11 +49,11 @@
     top:0;
     z-index: 1030;
     margin: 2px;
-      width: 185vw;
+      width: 15vw;
     }
   
     .item {
-      font-size: 1.8rem;
+      font-size: 2.1rem;
       color: white;
     background-color: transparent;
      display: inline;

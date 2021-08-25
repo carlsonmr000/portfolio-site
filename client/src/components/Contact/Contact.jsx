@@ -73,14 +73,13 @@ export default function Contact() {
           />
         </div>
 
-        <div className="send-container">
+        <div className="submit-container">
         <a href="mailto:carlsonmr000@gmail.com">
-        <button className="send" type="button" onclick="window.open('mailto:carlsonmr000@gmail.com');">send</button>
+        <button className="submit" type="submit" onclick="window.open('mailto:carlsonmr000@gmail.com');">submit</button>
         </a>
-       
-
         </div>
       </form>
+      <div id="status">Success</div>
     </div>
   );
 }

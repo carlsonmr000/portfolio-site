@@ -50,12 +50,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-size: 1rem;
+        font-size: 4rem;
         font-family: "Montserrat", sans-serif;
         color: white;
         font-weight: bolder;
-            padding-top: 2em;
-            margin-top: -16em;
+            /* padding-top: 2em; */
+            margin-left: 20px;
+            margin-top: -460px;
     }
     .line1 {
       visibility: hidden;
@@ -63,8 +64,8 @@
 
     .job {
      
-        font-size: 2rem;
-   
+        font-size: 3.5rem;
+        margin: -100px;
     }
   }
   
