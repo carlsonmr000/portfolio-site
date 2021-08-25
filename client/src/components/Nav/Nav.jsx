@@ -1,6 +1,7 @@
 import "./Nav.css";
 import { Link } from "react-scroll";
 
+
 const Nav = () => {
   return (
     <header className="navbar">
