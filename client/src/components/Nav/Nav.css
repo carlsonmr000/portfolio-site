@@ -37,18 +37,35 @@
 
   }
 
-  
 
   @media (max-width: 480px) {
+  
 
     .navbar {
-      justify-content: end;
-      flex-direction: column;
+      display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position:sticky;
+    top:0;
+    z-index: 1030;
+    margin: 2px;
       width: 185vw;
     }
   
     .item {
-      font-size: 1rem;
+      font-size: 1.8rem;
+      color: white;
+    background-color: transparent;
+     display: inline;
+    box-sizing: border-box;
+    padding: 4px 9px;
+    font-family: "Raleway", sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    line-height: 28px;
+    text-decoration: none;
+    border: none;
+    text-decoration: none;
     }
   }
   

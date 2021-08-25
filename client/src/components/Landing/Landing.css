@@ -10,12 +10,17 @@
 }
 
 .my-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 7rem;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: bolder;
         padding-top: 2em;
         margin-top: 1em;
+        margin: 15px auto;
+        height: 20vh;
 }
 
 .line1 {
@@ -37,3 +42,29 @@
     margin: 15px auto;
     height: 20vh;
 }
+
+
+@media (max-width: 480px) {
+  
+    .my-name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-weight: bolder;
+            padding-top: 2em;
+            margin-top: -16em;
+    }
+    .line1 {
+      visibility: hidden;
+    }
+
+    .job {
+     
+        font-size: 2rem;
+   
+    }
+  }
+  
