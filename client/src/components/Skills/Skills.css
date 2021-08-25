@@ -17,7 +17,7 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    margin: 40vh auto;
+    margin: 30vh auto;
 }
 
 .skills-container {
@@ -26,7 +26,7 @@
     height: 60vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap */
     height: 120px;
     width: 516px;
     justify-content: center;

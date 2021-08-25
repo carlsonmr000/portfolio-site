@@ -1,5 +1,14 @@
 .footer-container {
     z-index: 7;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 5vh;
+    margin: 5vh auto;
+    height: 10vh; 
+    white-space: nowrap; 
+    word-wrap: break-word;
   }
   .footer {
       /* padding: -80vh; */

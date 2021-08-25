@@ -28,11 +28,11 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact">
-      <h1 id="contact-me">Contact</h1>
+    <div id="contact-parent">
+      <h1 id="contact" className="contact-title">Contact</h1>
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
       <div className="label-input">
-          <label className="labels" htmlFor="name">
+          <label className="contact-labels" htmlFor="name">
           </label>
           <input
             onChange={(e) => handleChange(e)}
@@ -46,7 +46,7 @@ export default function Contact() {
           />
         </div>
         <div className="label-input">
-          <label className="labels" htmlFor="email">
+          <label className="contact-labels" htmlFor="email">
           </label>
           <input
             onChange={(e) => handleChange(e)}
@@ -60,7 +60,7 @@ export default function Contact() {
           />
         </div>
         <div className="label-input">
-          <label className="labels" htmlFor="message">
+          <label className="contact-labels" htmlFor="message">
           </label>
           <textarea
             onChange={(e) => handleChange(e)}
@@ -68,11 +68,18 @@ export default function Contact() {
             name="message"
             type="text"
             value={contact.message}
-            className="inputs"
+            className="message-input"
             placeholder="Your message"
           />
         </div>
-        <button className="contact-button" type="submit">{sent === true ? "Sent!" : "Send" }</button>
+
+        <div className="send-container">
+        <a href="mailto:carlsonmr000@gmail.com">
+        <button className="send" type="button" onclick="window.open('mailto:carlsonmr000@gmail.com');">send</button>
+        </a>
+       
+
+        </div>
       </form>
     </div>
   );

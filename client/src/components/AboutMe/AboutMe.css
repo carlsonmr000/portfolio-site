@@ -5,7 +5,7 @@
         align-items: center;
         flex-direction: column;
         width: 100vh;
-        margin: 45vh auto;
+        margin: 55vh auto;
         height: 10vh;
         /* white-space: nowrap; */
         word-wrap: break-word;
@@ -38,10 +38,16 @@
     height: 50vh;
 }
 
-.line2 {
+/* .line2 {
     width: 100vh;
-    margin: 20vh auto;
+    margin: 4vh auto;
     height: 5vh;
     border: none;
     border-bottom: 4px solid #09FBA4;
+} */
+
+h1 {
+    padding-top: 2em;
+    margin-top: 1em;
+
 }

@@ -4,8 +4,9 @@
     align-items: center;
     flex-direction: row;
     width: 100vh;
-    margin: 100px auto;
+    margin: 200px auto;
     height: 60vh;
+    padding: 50px;
 
 } 
 
@@ -17,7 +18,7 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    margin: 50vh auto;
+    margin: 45vh auto;
 }
 
 .projects-container {
@@ -33,7 +34,31 @@
     align-content: center;
 }
 
-.thing {
+.thing1 {
+
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 35vw;
+    flex: 0 0 50px;
+    margin: 6px;
+    height: 40vh;
+}
+
+.thing2 {
+
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 35vw;
+    flex: 0 0 50px;
+    margin: 6px;
+    height: 40vh;
+}
+
+.thing3 {
 
     display: flex;
      justify-content: center;
@@ -62,6 +87,7 @@
   height: 5vh;
   width: 8vw; 
   font-weight: bold;
+  cursor: pointer;
 }
 
 .project-code {
@@ -74,12 +100,15 @@
   height: 5vh;
   width: 8vw; 
   font-weight: bold;
+  cursor: pointer;
+
 }
 
-.line3 {
+ .line3 {
     width: 100vh;
-    margin: 20vh auto;
+    margin: 10vh auto;
     height: 30vh;
     border: none;
-    border-bottom: 4px solid #09FBA4;
-}
+    border-bottom: 4px solid #b5f3dc;
+    visibility: hidden;
+} 

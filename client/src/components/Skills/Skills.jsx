@@ -14,7 +14,7 @@ export default function Skills({ user }) {
   }, []);
   return (
     <div id="skills-parent">
-      <h1 className="skills-title">My Skills</h1>
+      <h1 className="skills-title" id="skills">My Skills</h1>
     <div className="skills-container">
     <div>
       <a href="https://imgbb.com/"><img src="https://i.ibb.co/8cXXLhj/HMTL.png" alt="HMTL" border="0" className="box"/></a>

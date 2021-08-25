@@ -1,16 +1,16 @@
-
-
 html {
     height: 100vh;
     height: 100vh;
-    background: linear-gradient(#6adaf1
-    10%, #76e5e6
-    50%, #81eae2
-    50%) no-repeat center center fixed; 
+    background: linear-gradient(#20C4F8, rgba(9, 251, 164, .5)) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; 
     scroll-behavior: smooth;
    
   }
+
+  [id] {
+    scroll-margin-top: 2ex;
+  }
+  

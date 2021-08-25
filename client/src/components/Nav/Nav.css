@@ -2,6 +2,10 @@
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
+    position:sticky;
+    top:0;
+    z-index: 1030;
+    margin: 2px;
   }
   
   a {
@@ -29,4 +33,6 @@
     line-height: 28px;
     text-decoration: none;
     border: none;
+    text-decoration: none;
+
   }

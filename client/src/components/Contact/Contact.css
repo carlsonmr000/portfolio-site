@@ -1,0 +1,101 @@
+.contact-parent {
+  
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 5vh;
+    margin: 5vh auto;
+    height: 10vh; 
+    white-space: nowrap; 
+    word-wrap: break-word;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 5vh auto;
+}
+
+.form {
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 100vh;
+    margin: 5vh auto;
+    height: 50vh; 
+    white-space: nowrap; 
+    word-wrap: break-word;
+}
+
+.label-input {
+    margin: 25px;
+}
+
+.contact-labels {
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 2vh;
+   width: 100vw;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2vh;
+    width: 40vw;
+    font-family: "Raleway", sans-serif;
+    border: none;
+    height: 4vh;
+}
+
+.message-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2vh;
+    width: 40vw;
+    font-family: "Raleway", sans-serif;
+    border: none;
+    height: 15vh;
+}
+
+.send-container {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.send {
+    font-size: 1rem;
+    border: 2px solid white; 
+    border-radius: 25px;
+    font-family: "Raleway", sans-serif;
+    margin: 50px;
+    color: white; 
+    height: 5vh;
+    width: 8vw; 
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(184, 248, 225, 0.5);
+}
+
+ 

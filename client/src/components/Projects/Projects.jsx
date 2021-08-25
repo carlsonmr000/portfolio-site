@@ -15,59 +15,81 @@ export default function Projects({ user }) {
   }, []);
   return (
     <div id="projects-parent">
-      <h1 className="projects-title">My Projects</h1>
+      <h1 className="projects-title" id="projects">My Projects</h1>
 
       <div className="projects-container">
-      <div>
-      <a href="https://ibb.co/xMSq6Wj"><img src="https://i.ibb.co/0fjyrTM/weather-app.png" alt="weather-app" border="0" className="thing"/></a>  
-    
-      <div className="project-button-container">
-      <button type="button" className="project-site">
-            See the site
-          </button>
+        <div>
+          <a href="https://weatherize-app.netlify.app/">
+            <img
+              src="https://i.ibb.co/0fjyrTM/weather-app.png"
+              alt="weather-app"
+              border="0"
+              className="thing1"
+            />
+          </a>
 
-          <button type="button" className="project-code">
-            See the code
-          </button>
+          <div className="project-button-container">
+            <a href="https://weatherize-app.netlify.app/">
+              <button type="button" className="project-site">
+                See the site
+              </button>
+            </a>
 
-      </div>
-          
+            <a href="https://github.com/carlsonmr000/Weatherize">
+              
+              <button type="button" className="project-code">
+                See the code
+              </button>
+            </a>
           </div>
+        </div>
 
-      <div>
+        <div>
+          <a href="https://guitar-songbook.netlify.app/">
+            <img
+              src="https://i.ibb.co/7JVLqjH/guitar-songbook.png"
+              alt="guitar-songbook"
+              border="0"
+              className="thing2"
+            />
+          </a>
+          <div className="project-button-container">
+            
+            <a href="https://guitar-songbook.netlify.app/">
+            <button type="button" className="project-site">
+              See the site
+            </button>
+            </a>
 
-      <a href="https://ibb.co/GvkNqnX"><img src="https://i.ibb.co/7JVLqjH/guitar-songbook.png" alt="guitar-songbook" border="0" className="thing"/></a>
-      <div className="project-button-container">
-      <button type="button" className="project-site">
-            See the site
-          </button>
+            <a href="https://github.com/carlsonmr000/Guitar-Songbook-"><button type="button" className="project-code">
+              See the code
+            </button></a>
+          </div>
+        </div>
 
-          <button type="button" className="project-code">
-            See the code
-          </button>
+        <div>
+          <a href="https://laugh-out-loud.netlify.app/">
+            <img
+              src="https://i.ibb.co/bKX8rNp/laugh-out-loud.png"
+              alt="laugh-out-loud"
+              border="0"
+              className="thing3"
+            />
+          </a>
+          <div className="project-button-container">
+         
+         <a href="https://laugh-out-loud.netlify.app/"><button type="button" className="project-site">
+              See the site
+            </button></a>
 
-      </div>
+          <a href="https://github.com/carlsonmr000/Laugh-Out-Loud"><button type="button" className="project-code">
+              See the code
+            </button></a>
 
-      </div>
-
-      <div>
-      <a href="https://ibb.co/QKM16Ys"><img src="https://i.ibb.co/bKX8rNp/laugh-out-loud.png" alt="laugh-out-loud" border="0" className="thing"/></a>
-      <div className="project-button-container">
-      <button type="button" className="project-site">
-            See the site
-          </button>
-
-          <button type="button" className="project-code">
-            See the code
-          </button>
-
-      </div>
-      </div>
-
+          </div>
+        </div>
       </div>
       <hr className="line3" />
-
-
     </div>
   );
 }

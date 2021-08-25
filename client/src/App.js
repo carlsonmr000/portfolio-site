@@ -32,7 +32,7 @@ const App = () => {
       <Layout setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} user={user} setUser={setUser}> 
         <Switch>
           <Route exact path="/">
-            <Home user={user} />
+            <Home user={user} />            
           </Route>
           <Route exact path="/log-in">
             <LogIn setUser={setUser} />
@@ -43,11 +43,12 @@ const App = () => {
           <Route exact path="/edit/:id">
           <EditProject user={user} setUser={setUser} />
           </Route>
-          <Route exact path="/contacts">
+          <Route exact path="/messages">
           <Messages user={user} />
           </Route>
         </Switch>
       </Layout>
+      
     </div>
   );
 };
