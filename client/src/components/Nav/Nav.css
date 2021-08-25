@@ -36,3 +36,17 @@
     text-decoration: none;
 
   }
+
+  @media (max-width: 480px) {
+
+    .navbar {
+      justify-content: end;
+      flex-direction: column;
+      width: 185vw;
+    }
+  
+    .item {
+      font-size: 2rem;
+    }
+  }
+  
