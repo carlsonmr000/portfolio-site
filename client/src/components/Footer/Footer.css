@@ -20,7 +20,42 @@
       align-content: center;
       justify-content: center;
       text-align: center;
-      margin: 10px auto;
+      margin: 20px auto;
       color: white;
       font-family: "Montserrat", sans-serif;
+    }
+
+    .dev-container {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      justify-content: space-evenly;
+      color: white;
+    }
+    .dev-logo-container {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      flex-wrap: nowrap;
+    
+    }
+    .dev-logo-container > * {
+      padding: 0 1.5rem 2rem;
+      color: white;
+      text-decoration: none;
+    }
+    .dev-name {
+      grid-area: name;
+      padding: 1rem 0 0;
+    
+      text-align: center;
+    }
+    .octocat > img {
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .linkedin-logo:hover,
+    .github-logo:hover {
+      color: #ab8f7f;
     }
