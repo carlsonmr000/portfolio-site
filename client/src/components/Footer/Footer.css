@@ -12,13 +12,15 @@
   }
   .footer {
       /* padding: -80vh; */
+      display: flex;
       box-sizing: border-box;
-      position: fixed;
+      position: sticky;
       bottom: 0;
       width: 100%;
       align-content: center;
       justify-content: center;
-      flex-direction: column;
       text-align: center;
       margin: 10px auto;
+      color: white;
+      font-family: "Montserrat", sans-serif;
     }

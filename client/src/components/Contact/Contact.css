@@ -102,3 +102,57 @@
     background-color: #f39406;
     color: white;
 }
+
+.status-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+}
+
+#status {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+    margin: 3vw;
+    border-radius: 8px;
+    max-width: 730px;
+    width: 66vw;
+    font-weight: bold;
+    color: white;
+}
+
+#status.success {
+    background-color: #20C4F8;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgba(250, 129, 92);
+    animation: status 4s ease forwards;
+
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all
+    }
+
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}

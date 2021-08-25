@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { createMessage } from "../../services/contacts";
+// import { createMessage } from "../../services/contacts";
 import "./Contact.css";
 
 export default function Contact() {
-  const [sent, isSent] = useState(false)
+  const [sent, isSent] = useState(false);
   const [contact, setContact] = useState({
     email: "",
     message: "",
@@ -17,23 +17,30 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    await createMessage(contact);
-    setContact({
-      email: "",
-      message: "",
-    })
-    isSent(!sent)
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   await createMessage(contact);
+  //   setContact({
+  //     email: "",
+  //     message: "",
+  //   });
+  //   isSent(!sent);
+  // };
 
   return (
     <div id="contact-parent">
-      <h1 id="contact" className="contact-title">Contact</h1>
-      <form className="form" onSubmit={(e) => handleSubmit(e)}>
-      <div className="label-input">
-          <label className="contact-labels" htmlFor="name">
-          </label>
+      <h1 id="contact" className="contact-title">
+        Contact
+      </h1>
+      <form
+        className="form"
+        // onSubmit={(e) => handleSubmit(e)}
+        action="https://formspree.io/f/mgerpjap"
+        method="POST"
+        id="my-form"
+      >
+        <div className="label-input">
+          <label className="contact-labels" htmlFor="name"></label>
           <input
             onChange={(e) => handleChange(e)}
             id="name"
@@ -42,12 +49,10 @@ export default function Contact() {
             value={contact.name}
             className="inputs"
             placeholder="Name"
-
           />
         </div>
         <div className="label-input">
-          <label className="contact-labels" htmlFor="email">
-          </label>
+          <label className="contact-labels" htmlFor="email"></label>
           <input
             onChange={(e) => handleChange(e)}
             id="email"
@@ -56,12 +61,10 @@ export default function Contact() {
             value={contact.email}
             className="inputs"
             placeholder="Email"
-
           />
         </div>
         <div className="label-input">
-          <label className="contact-labels" htmlFor="message">
-          </label>
+          <label className="contact-labels" htmlFor="message"></label>
           <textarea
             onChange={(e) => handleChange(e)}
             id="message"
@@ -74,12 +77,15 @@ export default function Contact() {
         </div>
 
         <div className="submit-container">
-        <a href="mailto:carlsonmr000@gmail.com">
-        <button className="submit" type="submit" onclick="window.open('mailto:carlsonmr000@gmail.com');">submit</button>
-        </a>
+          <button className="submit" type="submit">
+            submit
+          </button>
         </div>
       </form>
-      <div id="status">Success</div>
+      <div className="status-parent">
+        <div id="status">
+        </div>
+      </div>
     </div>
   );
 }
