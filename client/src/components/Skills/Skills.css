@@ -1,0 +1,47 @@
+.skills-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vh;
+    margin: 100px auto;
+    height: 60vh;
+
+} 
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 40vh auto;
+}
+
+.skills-container {
+    display: flex;
+    margin: -15vh auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 516px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box {
+
+    display: flex;
+     height: 120px;
+     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90px;
+    flex: 0 0 50px;
+    margin: 5px;
+}

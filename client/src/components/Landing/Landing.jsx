@@ -2,9 +2,10 @@ import "./Landing.css";
 
 export default function Landing() {
   return (
-    <div id="landing">
+    <div id="landing" className="landing-parent">
       <h1 className="intro">
-        <span className="name" data-aos="animation_name" data-aos="fade-down">Maximiliana Carlson</span> <br />
+        <span className="my-name" data-aos="animation_name">Maximiliana Carlson</span> <br />
+        <hr className="line1" />
         <span className="job">
           Software Engineer
         </span>

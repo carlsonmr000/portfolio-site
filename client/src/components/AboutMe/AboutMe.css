@@ -1,0 +1,47 @@
+.aboutme-parent {
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vh;
+        margin: 45vh auto;
+        height: 10vh;
+        /* white-space: nowrap; */
+        word-wrap: break-word;
+
+    
+}
+
+.aboutme-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 5vh auto;
+}
+
+.aboutme-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    margin: 25px auto;
+    line-height: 1.5em;
+    width: 90vh;
+    height: 50vh;
+}
+
+.line2 {
+    width: 100vh;
+    margin: 20vh auto;
+    height: 5vh;
+    border: none;
+    border-bottom: 4px solid #09FBA4;
+}
