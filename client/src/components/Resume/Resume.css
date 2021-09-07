@@ -1,0 +1,36 @@
+.resume-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vh;
+    margin: 200px auto;
+    height: 60vh;
+    padding: 50px;
+
+} 
+
+.resume-container {
+    display: flex;
+    margin: -40vh auto;
+    height: 60vh;
+     flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 120px; */
+    width: 516px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.thing1 {
+
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 35vw;
+    flex: 0 0 50px;
+    margin: 6px;
+    height: 40vh;
+}
