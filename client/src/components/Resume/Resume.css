@@ -11,7 +11,7 @@
 
 .resume-container {
     display: flex;
-    margin: 25vh auto;
+    margin: 30vh auto;
     height: 60vh;
      flex-direction: column;
     flex-wrap: wrap;
@@ -43,7 +43,7 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    margin: 5vh auto;
+    margin: -7vh auto;
 }
 
 .resume-photo {
@@ -54,5 +54,5 @@
     align-content: center;
     width: 55vw;
     flex: 0 0 50px;
-    height: 90vh;
+    height: 100vh;
 }

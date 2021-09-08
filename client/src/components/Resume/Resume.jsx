@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="resume-wrapper">
           <a href="#">
             <img
-              src="https://i.ibb.co/0YwWZL8/Maximiliana-Carlson-Resume-2021-doc-5.jpg"
+              src="https://i.ibb.co/c1V2sw7/Maximiliana-Carlson-Resume-2021-doc-6.jpg"
               alt="resume"
               border="0"
               className="resume-photo"
