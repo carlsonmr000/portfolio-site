@@ -18,7 +18,7 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    margin: 45vh auto;
+    margin: 37vh auto;
 }
 
 .projects-container {
@@ -27,7 +27,6 @@
     height: 60vh;
      flex-direction: column;
     flex-wrap: wrap;
-    /* height: 120px; */
     width: 516px;
     justify-content: center;
     align-items: center;

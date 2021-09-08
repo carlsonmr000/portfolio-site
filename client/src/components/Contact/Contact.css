@@ -29,6 +29,7 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: normal;
+    margin: 50vh auto;
  }
 
 .form {
@@ -37,7 +38,7 @@
     align-items: center;
     flex-direction: column; 
     width: 100vh;
-    margin: 5vh auto;
+    margin: 50vh auto;
     height: 50vh; 
     white-space: nowrap; 
     word-wrap: break-word;

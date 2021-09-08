@@ -1,27 +1,26 @@
 import "./Resume.css";
 import React from 'react'
 
-const AboutMe = () => {
+const Resume = () => {
 
   return (
     <div id="resume-parent">
-      <h1 className="resume-title" id="projects">Resume</h1>
+      <h1 className="resume-title" id="resume">Resume</h1>
 
       <div className="resume-container">
-        <div>
+        <div className="resume-wrapper">
           <a href="#">
             <img
-              src="https://ibb.co/ZcZwKrt"
+              src="https://i.ibb.co/0YwWZL8/Maximiliana-Carlson-Resume-2021-doc-5.jpg"
               alt="resume"
               border="0"
-              className="thing1"
+              className="resume-photo"
             />
           </a>
       </div>
-      <hr className="line3" />
       </div>
     </div>
   );
 }
 
-export default AboutMe;
+export default Resume;

@@ -7,10 +7,22 @@
     margin: 200px auto;
     height: 60vh;
     padding: 50px;
-
 } 
 
 .resume-container {
+    display: flex;
+    margin: 25vh auto;
+    height: 60vh;
+     flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 120px; */
+    width: 516px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.resume-wrapper {
     display: flex;
     margin: -40vh auto;
     height: 60vh;
@@ -23,14 +35,24 @@
     align-content: center;
 }
 
-.thing1 {
+.resume-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 5vh auto;
+}
+
+.resume-photo {
 
     display: flex;
      justify-content: center;
     align-items: center;
     align-content: center;
-    width: 35vw;
+    width: 55vw;
     flex: 0 0 50px;
-    margin: 6px;
-    height: 40vh;
+    height: 90vh;
 }

@@ -59,13 +59,17 @@ const Nav = () => {
             </Link>
           </a>
 
-          <a
-            href="https://docs.google.com/document/d/12_ODj_FEViDGPyeR9Q7z_eZ1cT4dI1ctZVr3yNTwk7w/preview"
-            target="_blank"
-            rel="noreferrer"
-            className="item"
-          >
-            Resume
+          <a>
+            <Link
+              href="/#resume"
+              className="item"
+              to="resume"
+              spy={true}
+              smooth={true}
+              duration={100}
+            >
+              Resume
+            </Link>
           </a>
 
           <a>
